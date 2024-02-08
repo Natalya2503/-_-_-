@@ -35,7 +35,7 @@ class User:
     def return_book(self, book):
         if book in self.list_books:
           self.list_books.remove(book)
-          print(f'Книга {book} вовращена в библиотеку \nСписок книг: {self.list_books}')
+          return f'Книга {book} вовращена в библиотеку \nСписок книг: {self.list_books}'
           
     def take_book(self, book):
         self.list_books.append(book)
@@ -48,7 +48,7 @@ user1.take_book(book)
 
 print('--------------')
 user1.display_info()
-user1.return_book(book)
+user1.return_book(book) 
 
 
 

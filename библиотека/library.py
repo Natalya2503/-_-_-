@@ -7,8 +7,8 @@ from user import User
 class Library:
     __slots__ = ('_book_list', '_list_users')
     def __init__(self):
-        self._book_list = list()
-        self._list_users = list()
+        self._book_list = []
+        self._list_users = []
     
 
     @property
